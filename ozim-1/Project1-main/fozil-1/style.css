@@ -1,0 +1,159 @@
+/* Umumiy stil */
+body {
+    font-family: 'Roboto', sans-serif; /* Change to a more modern font from Google Fonts */
+    background: linear-gradient(135deg, rgb(11, 226, 226), rgb(235, 11, 11));
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Header */
+header {
+    background: linear-gradient(135deg, rgb(235, 11, 11), rgb(11, 226, 226));
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Navigatsiya */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+    transform: scale(1.1);
+}
+
+/* Asosiy bo‘lim */
+main {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Anime ro‘yxati */
+.anime-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.anime-item {
+    background: linear-gradient(135deg, red, rgb(0, 255, 255));
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anime-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.anime-item h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.anime-item video {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.anime-item video:hover {
+    transform: scale(1.02);
+}
+
+/* Havola */
+.anime-item a {
+    color: #ff9800;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.anime-item a:hover {
+    text-decoration: underline;
+    color: #ff5722;
+    transform: scale(1.1);
+}
+
+/* Aloqa bo‘limi */
+#contact {
+    margin-top: 50px;
+    padding: 30px;
+    background: linear-gradient(135deg, rgb(221, 77, 77), darkcyan);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, rgb(235, 11, 11), rgb(11, 226, 226));
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 14px;
+    color: white;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .anime-list {
+        flex-direction: column;
+    }
+
+    .anime-item {
+        width: 90%; /* Make anime items take more width on smaller screens */
+        margin-bottom: 20px; /* Add some space between items */
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
